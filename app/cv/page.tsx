@@ -1,8 +1,13 @@
+import { Button } from "@/components/ui/button";
 import { ProximaSoft } from "@/lib/fonts";
 import { cn } from "@/lib/utils";
+import { ArrowBigDown, ArrowDown, Github, MailCheck } from "lucide-react";
 import Image from "next/image";
-import { BsCodeSlash } from "react-icons/bs";
-import { FaUniversity } from "react-icons/fa";
+import { BsCaretDown, BsCodeSlash } from "react-icons/bs";
+import { FaCaretDown, FaUniversity } from "react-icons/fa";
+import { HiChevronDown } from "react-icons/hi";
+import { FiMail } from "react-icons/fi";
+import Link from "next/link";
 
 export default function CvPage() {
     return (
@@ -27,9 +32,9 @@ export default function CvPage() {
                         </div>
                     </div>
                 </div>
-                <div className="grid grid-cols-[40%_60%]">
+                <div className="grid grid-cols-[40%_60%] gap-24">
                     <div className="text-slate-50">
-                        <p className="text-amber-500 mb-6 text-sm text-center font-bold">education</p>
+                        <p className="text-amber-500 mb-6 text-xs text-center font-bold">education</p>
                         <div className="border border-slate-900 rounded-lg p-4 flex flex-col gap-10">
                             <div className="grid grid-cols-[20%_80%]">
                                 <div className="relative">
@@ -56,8 +61,27 @@ export default function CvPage() {
                             </div>
                         </div>
                     </div>
-                    <div className="text-slate-50">
-                        <h2>About me</h2>
+                    <div className="text-slate-50 flex flex-col justify-between">
+                        <div>
+                            <div className="text-muted-foreground flex items-center justify-start gap-2">
+                                <p className="text-xs">About me</p>
+                                <HiChevronDown />
+                            </div>
+                            <h2 className="mt-4 text-3xl font-medium mb-4">Short bio of mine</h2>
+                            <p className="max-w-[500px]">Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem laborum cum consectetur, officia commodi architecto ullam id explicabo tempore voluptatibus corrupti fuga nulla debitis, nesciunt, culpa doloribus nemo praesentium corporis.</p>
+                        </div>
+                        <div className="flex items-center justify-start gap-4">
+                            <Button className="flex items-center justify-center gap-2">
+                                <p>View Github</p>
+                                <Github />
+                            </Button>
+                            <Button>
+                                <Link href={"mailto:olek.drwal@gmail.com"} className="flex items-center justify-center gap-2">
+                                    <p>Contact me</p>
+                                    <FiMail className='text-2xl' />
+                                </Link>
+                            </Button>
+                        </div>
                     </div>
                 </div>
             </div>
