@@ -4,14 +4,14 @@ import { cn } from "@/lib/utils";
 import { ArrowBigDown, ArrowDown, Github, MailCheck } from "lucide-react";
 import Image from "next/image";
 import { BsCaretDown, BsCodeSlash } from "react-icons/bs";
-import { FaCaretDown, FaUniversity } from "react-icons/fa";
+import { FaCaretDown, FaUniversity, FaReact } from "react-icons/fa";
 import { HiChevronDown } from "react-icons/hi";
 import { FiMail } from "react-icons/fi";
 import Link from "next/link";
 
 export default function CvPage() {
     return (
-        <div className="bg-slate-950 h-screen w-screen">
+        <div className="bg-slate-950 h-screen w-screen overflow-x-hidden">
             <div className="w-[60%] m-auto">
                 <div className="flex justify-center items-center">
                     <div className="flex justify-center items-center">
@@ -84,6 +84,53 @@ export default function CvPage() {
                         </div>
                     </div>
                 </div>
+                <section className="text-slate-100 pb-[1000px] mt-24">
+                    <h3 className="text-center font-medium text-muted-foreground">My skills</h3>
+                    <div className="flex gap-20 px-20 py-10 flex-wrap justify-center items-center">
+                        <div className="bg-gradient-to-br from-sky-400/30 to-sky-900/30 p-[1px] rounded-md">
+                            <div className="bg-slate-950 rounded-md w-32 aspect-square flex justify-center flex-col items-center gap-4">
+                                <p className="font-medium text-muted-foreground">React</p>
+                                <FaReact className="text-6xl text-muted-foreground" />
+                            </div>
+                        </div>
+                        <div className="bg-gradient-to-br from-sky-400/30 to-sky-900/30 p-[1px] rounded-md">
+                            <div className="bg-slate-950 rounded-md w-32 aspect-square flex justify-center flex-col items-center gap-4">
+                                <p className="font-medium text-muted-foreground">TypeScript</p>
+                                <FaReact className="text-6xl text-muted-foreground" />
+                            </div>
+                        </div>
+                        <div className="bg-gradient-to-br from-sky-400/30 to-sky-900/30 p-[1px] rounded-md">
+                            <div className="bg-slate-950 rounded-md w-32 aspect-square flex justify-center flex-col items-center gap-4">
+                                <p className="font-medium text-muted-foreground">Express</p>
+                                <FaReact className="text-6xl text-muted-foreground" />
+                            </div>
+                        </div>
+                        <div className="bg-gradient-to-br from-sky-400/30 to-sky-900/30 p-[1px] rounded-md">
+                            <div className="bg-slate-950 rounded-md w-32 aspect-square flex justify-center flex-col items-center gap-4">
+                                <p className="font-medium text-muted-foreground">NodeJS</p>
+                                <FaReact className="text-6xl text-muted-foreground" />
+                            </div>
+                        </div>
+                        <div className="bg-gradient-to-br from-sky-400/30 to-sky-900/30 p-[1px] rounded-md">
+                            <div className="bg-slate-950 rounded-md w-32 aspect-square flex justify-center flex-col items-center gap-4">
+                                <p className="font-medium text-muted-foreground">Next.js</p>
+                                <FaReact className="text-6xl text-muted-foreground" />
+                            </div>
+                        </div>
+                        <div className="bg-gradient-to-br from-sky-400/30 to-sky-900/30 p-[1px] rounded-md">
+                            <div className="bg-slate-950 rounded-md w-32 aspect-square flex justify-center flex-col items-center gap-4">
+                                <p className="font-medium text-muted-foreground">Python</p>
+                                <FaReact className="text-6xl text-muted-foreground" />
+                            </div>
+                        </div>
+                        <div className="bg-gradient-to-br from-sky-400/30 to-sky-900/30 p-[1px] rounded-md">
+                            <div className="bg-slate-950 rounded-md w-32 aspect-square flex justify-center flex-col items-center gap-4">
+                                <p className="font-medium text-muted-foreground">C++</p>
+                                <FaReact className="text-6xl text-muted-foreground" />
+                            </div>
+                        </div>
+                    </div>
+                </section>
             </div>
         </div>
     )
