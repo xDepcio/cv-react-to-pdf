@@ -87,12 +87,12 @@ export default function CvPage() {
                 <section className="text-slate-100 pb-[1000px] mt-24">
                     <h3 className="text-center font-medium text-muted-foreground">My skills</h3>
                     <div className="flex gap-20 px-20 py-10 flex-wrap justify-center items-center">
-                        <div className="bg-gradient-to-br from-sky-400/30 to-sky-900/30 p-[1px] rounded-md">
-                            <div className="bg-slate-950 rounded-md w-32 aspect-square flex justify-center flex-col items-center gap-4">
-                                <p className="font-medium text-muted-foreground">React</p>
-                                <FaReact className="text-6xl text-muted-foreground" />
-                            </div>
+                        {/* <div className="rounded-full bg-slate-700"> */}
+                        <div className="bg-slate-900/50 rounded-full w-32 aspect-square flex justify-center flex-col items-center gap-2">
+                            <p className="font-semibold text-muted-foreground text-sm">React</p>
+                            <FaReact className="text-6xl text-muted-foreground text-sky-500" />
                         </div>
+                        {/* </div> */}
                         <div className="bg-gradient-to-br from-sky-400/30 to-sky-900/30 p-[1px] rounded-md">
                             <div className="bg-slate-950 rounded-md w-32 aspect-square flex justify-center flex-col items-center gap-4">
                                 <p className="font-medium text-muted-foreground">TypeScript</p>
@@ -130,6 +130,9 @@ export default function CvPage() {
                             </div>
                         </div>
                     </div>
+                </section>
+                <section>
+
                 </section>
             </div>
         </div>
