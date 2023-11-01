@@ -19,20 +19,21 @@ export default function CvPage() {
                     </div>
                     <div>
                         <p className="text-lg text-muted-foreground font-medium">Hi! I'm</p>
-                        <h1 className={cn(ProximaSoft.className, "text-sky-500 text-7xl whitespace-nowrap font-bold")}>Aleksander Drwal</h1>
-                        <div className="flex items-center justify-between px-4 mt-10">
-                            <div className="text-slate-50 flex items-center justify-center gap-4">
-                                <p className="font-semibold">Web developer</p>
-                                <BsCodeSlash className="text-2xl" />
+                        <h1 className={cn(ProximaSoft.className, "text-7xl whitespace-nowrap font-bold bg-gradient-to-br from-sky-500 to-sky-800  text-transparent bg-clip-text")}>Aleksander Drwal</h1>
+                        <div className="flex items-start mt-6 gap-10">
+                            <div className="text-slate-100 flex items-center justify-center gap-3">
+                                <Image src={"/code-svg.svg"} width={40} height={40} alt={'web-svg'} />
+                                <p className="font-semibold text-muted-foreground ">Web developer</p>
+                                {/* <BsCodeSlash className="text-2xl" /> */}
                             </div>
-                            <div className="text-slate-50 flex items-center justify-center gap-4">
-                                <p className="font-semibold">Comp-sci student</p>
-                                <FaUniversity className="text-2xl" />
+                            <div className="text-slate-100 flex items-center justify-center gap-3">
+                                <Image src={"/university.svg"} width={40} height={40} alt={'web-svg'} />
+                                <p className="font-semibold text-muted-foreground">Comp-sci student</p>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div className="grid grid-cols-[40%_60%] gap-24">
+                <div className="grid grid-cols-2 gap-24">
                     <div className="text-slate-50">
                         <p className="text-amber-500 mb-6 text-xs text-center font-bold">education</p>
                         <div className="border border-slate-900 rounded-lg p-4 flex flex-col gap-10">
@@ -68,7 +69,7 @@ export default function CvPage() {
                                 <HiChevronDown />
                             </div>
                             <h2 className="mt-4 text-3xl font-medium mb-4">Short bio of mine</h2>
-                            <p className="max-w-[500px]">Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem laborum cum consectetur, officia commodi architecto ullam id explicabo tempore voluptatibus corrupti fuga nulla debitis, nesciunt, culpa doloribus nemo praesentium corporis.</p>
+                            <p className="">Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem laborum cum consectetur, officia commodi architecto ullam id explicabo tempore voluptatibus corrupti fuga nulla debitis, nesciunt, culpa doloribus nemo praesentium corporis.</p>
                         </div>
                         <div className="flex items-center justify-start gap-4">
                             <Button className="flex items-center justify-center gap-2">
@@ -88,15 +89,39 @@ export default function CvPage() {
                     <h3 className="text-center font-medium text-muted-foreground">My skills</h3>
                     <div className="flex gap-20 px-20 py-10 flex-wrap justify-center items-center">
                         {/* <div className="rounded-full bg-slate-700"> */}
-                        <div className="bg-slate-900/50 rounded-full w-32 aspect-square flex justify-center flex-col items-center gap-2 shadow-lg">
+                        <div className="bg-slate-900/50 rounded-full w-32 aspect-square flex justify-center flex-col items-center gap-2 shadow-md">
                             <p className="font-semibold text-muted-foreground text-sm">React</p>
                             <FaReact className="text-6xl text-muted-foreground text-sky-500" />
+                        </div>
+                        <div className="bg-slate-900/50 rounded-full w-32 aspect-square flex justify-center flex-col items-center gap-2 shadow-md">
+                            <p className="font-semibold text-muted-foreground text-sm">TypeScript</p>
+                            <Image src={'/typescript.svg'} alt="skill image" width={50} height={50} />
+                        </div>
+                        <div className="bg-slate-900/50 rounded-full w-32 aspect-square flex justify-center flex-col items-center gap-2 shadow-md">
+                            <p className="font-semibold text-muted-foreground text-sm">Next.js</p>
+                            <Image src={'/nextjs.svg'} alt="skill image" width={50} height={50} />
+                        </div>
+                        <div className="bg-slate-900/50 rounded-full w-32 aspect-square flex justify-center flex-col items-center gap-2 shadow-md">
+                            <p className="font-semibold text-muted-foreground text-sm">NodeJS</p>
+                            <Image src={'/node.svg'} alt="skill image" width={50} height={50} />
+                        </div>
+                        <div className="bg-slate-900/50 rounded-full w-32 aspect-square flex justify-center flex-col items-center gap-2 shadow-md">
+                            <p className="font-semibold text-muted-foreground text-sm">Sequelize</p>
+                            <Image src={'/sequelize.svg'} alt="skill image" width={50} height={50} />
+                        </div>
+                        <div className="bg-slate-900/50 rounded-full w-32 aspect-square flex justify-center flex-col items-center gap-2 shadow-md">
+                            <p className="font-semibold text-muted-foreground text-sm">Python</p>
+                            <Image src={'/python.svg'} alt="skill image" width={50} height={50} />
+                        </div>
+                        <div className="bg-slate-900/50 rounded-full w-32 aspect-square flex justify-center flex-col items-center gap-2 shadow-md">
+                            <p className="font-semibold text-muted-foreground text-sm">C++</p>
+                            <Image src={'/cpp.svg'} alt="skill image" width={50} height={50} />
                         </div>
                         {/* </div> */}
                         <div className="bg-gradient-to-br from-sky-400/30 to-sky-900/30 p-[1px] rounded-md">
                             <div className="bg-slate-950 rounded-md w-32 aspect-square flex justify-center flex-col items-center gap-4">
-                                <p className="font-medium text-muted-foreground">TypeScript</p>
-                                <FaReact className="text-6xl text-muted-foreground" />
+                                <p className="font-medium text-muted-foreground">Python</p>
+                                <Image src={'/python.svg'} alt="skill image" width={50} height={50} />
                             </div>
                         </div>
                         <div className="bg-gradient-to-br from-sky-400/30 to-sky-900/30 p-[1px] rounded-md">
@@ -136,7 +161,7 @@ export default function CvPage() {
                         <h3 className="">Recent projects</h3>
                         <HiChevronDown />
                     </div>
-                    <div className="mt-8 flex flex-col gap-20">
+                    <div className="mt-8 flex flex-col gap-16">
                         <div className="flex gap-10">
                             <Image alt="project-1-image" src={"/strapup-main-page-cut.png"} width={500} height={500}
                                 className="shadow-md rounded-lg"
