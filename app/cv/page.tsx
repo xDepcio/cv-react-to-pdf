@@ -17,9 +17,12 @@ export default function CvPage() {
                     <div className="innger-bg-geo "></div>
                 </div>
                 <section className="flex justify-center items-center mb-20 gap-8 mt-20">
-                    <div className="flex justify-center items-center">
-                        {/* <Image alt="profile-img" src="/bongo-cat.png" width={1300} height={980} /> */}
-                        <Image alt="profile-img" src="/test.svg" width={400} height={20000} />
+                    <div className="flex justify-center items-center relative">
+                        <div className="w-[1200px] h-[600px] scale-50 -left-1/2 -top-24 absolute" style={{ backgroundImage: `url(/test-2.svg)` }}>
+
+                        </div>
+                        <Image alt="profile-img" className="opacity-0" src="/bongo-cat.png" width={1300} height={980} />
+                        {/* <Image alt="profile-img" src="/test-2.svg" className="" width={1200} height={600} /> */}
                     </div>
                     <div>
                         <p className="text-lg text-muted-foreground font-medium">Hi! I'm</p>
