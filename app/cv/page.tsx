@@ -1,7 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { ProximaSoft } from "@/lib/fonts";
 import { cn } from "@/lib/utils";
-import { ArrowBigDown, ArrowDown, Github, MailCheck } from "lucide-react";
+import { ArrowBigDown, ArrowDown, Code, Code2, EyeIcon, Github, MailCheck } from "lucide-react";
 import Image from "next/image";
 import { BsCaretDown, BsCodeSlash } from "react-icons/bs";
 import { FaCaretDown, FaUniversity, FaReact } from "react-icons/fa";
@@ -12,7 +12,7 @@ import Link from "next/link";
 export default function CvPage() {
     return (
         <div className="bg-slate-950 h-screen w-screen overflow-x-hidden">
-            <div className="w-[60%] m-auto">
+            <div className="w-[60%] w-[1152px] m-auto">
                 <div className="flex justify-center items-center">
                     <div className="flex justify-center items-center">
                         <Image alt="profile-img" src="/hero-img.png" width={1300} height={980} />
@@ -84,11 +84,11 @@ export default function CvPage() {
                         </div>
                     </div>
                 </div>
-                <section className="text-slate-100 pb-[1000px] mt-24">
+                <section className="text-slate-100 mt-24">
                     <h3 className="text-center font-medium text-muted-foreground">My skills</h3>
                     <div className="flex gap-20 px-20 py-10 flex-wrap justify-center items-center">
                         {/* <div className="rounded-full bg-slate-700"> */}
-                        <div className="bg-slate-900/50 rounded-full w-32 aspect-square flex justify-center flex-col items-center gap-2">
+                        <div className="bg-slate-900/50 rounded-full w-32 aspect-square flex justify-center flex-col items-center gap-2 shadow-lg">
                             <p className="font-semibold text-muted-foreground text-sm">React</p>
                             <FaReact className="text-6xl text-muted-foreground text-sky-500" />
                         </div>
@@ -131,8 +131,74 @@ export default function CvPage() {
                         </div>
                     </div>
                 </section>
-                <section>
+                <section className="text-slate-100 mt-24">
+                    <div className="flex items-center justify-start gap-2 text-muted-foreground font-medium">
+                        <h3 className="">Recent projects</h3>
+                        <HiChevronDown />
+                    </div>
+                    <div className="mt-8 flex flex-col gap-20">
+                        <div className="flex gap-10">
+                            <Image alt="project-1-image" src={"/strapup-main-page-cut.png"} width={500} height={500}
+                                className="shadow-md rounded-lg"
+                            />
+                            <div className="">
+                                <div>
+                                    <h4 className="text-xl font-medium mt-4">Strapup - a template CLI</h4>
+                                    <p className="text-sm text-muted-foreground">React, TypeScript, Next.js, NodeJS, TailwindCSS, CLI</p>
+                                    <p className="mt-6">Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit accusamus laborum minus sint id alias ipsam officia corporis. Ipsum exercitationem voluptatum inventore repellat vitae! Totam optio nostrum temporibus officia nisi?</p>
+                                </div>
+                                <div className="flex gap-4 items-center justify-start mt-10">
+                                    <Button >
+                                        <Link href={'strapup.vercel.app'} className="flex items-center justify-center gap-2">
+                                            <p>See code</p>
+                                            <Code2 />
+                                        </Link>
+                                    </Button>
+                                    <Button >
+                                        <Link href={'strapup.vercel.app'} className="flex items-center justify-center gap-2">
+                                            <p>View deployment</p>
+                                            <EyeIcon />
+                                        </Link>
+                                    </Button>
+                                </div>
+                            </div>
+                        </div>
+                        <div className="flex items-center justify-center gap-4">
+                            <div className="bg-slate-300 w-2 aspect-square rounded-full"></div>
+                            <div className="bg-slate-300 w-2 aspect-square rounded-full"></div>
+                            <div className="bg-slate-300 w-2 aspect-square rounded-full"></div>
+                        </div>
+                        <div className="flex gap-10 flex-row-reverse">
+                            <Image alt="project-1-image" src={"/strapup-main-page-cut.png"} width={500} height={500}
+                                className="shadow-md rounded-lg"
+                            />
+                            <div className="">
+                                <div>
+                                    <h4 className="text-xl font-medium mt-4">Strapup - a template CLI</h4>
+                                    <p className="text-sm text-muted-foreground">React, TypeScript, Next.js, NodeJS, TailwindCSS, CLI</p>
+                                    <p className="mt-6">Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit accusamus laborum minus sint id alias ipsam officia corporis. Ipsum exercitationem voluptatum inventore repellat vitae! Totam optio nostrum temporibus officia nisi?</p>
+                                </div>
+                                <div className="flex gap-4 items-center justify-start mt-10">
+                                    <Button >
+                                        <Link href={'strapup.vercel.app'} className="flex items-center justify-center gap-2">
+                                            <p>See code</p>
+                                            <Code2 />
+                                        </Link>
+                                    </Button>
+                                    <Button >
+                                        <Link href={'strapup.vercel.app'} className="flex items-center justify-center gap-2">
+                                            <p>View deployment</p>
+                                            <EyeIcon />
+                                        </Link>
+                                    </Button>
+                                </div>
+                            </div>
+                        </div>
 
+                    </div>
+                </section>
+                <section className="text-slate-100 mt-24 mb-64">
+                    <p className="text-muted-foreground text-sm text-center">CV designed and created in React by me :). View code <Link href={'/'} className="underline inline">here</Link>.</p>
                 </section>
             </div>
         </div>
