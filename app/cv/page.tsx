@@ -11,11 +11,14 @@ import Link from "next/link";
 
 export default function CvPage() {
     return (
-        <div className="bg-slate-950 h-screen w-screen overflow-x-hidden">
-            <div className="w-[1152px] m-auto">
-                <div className="flex justify-center items-center">
+        <div className="h-screen w-screen overflow-x-hidden">
+            <div className="w-[1152px] m-auto relative">
+                <div className="absolute w-full h-[700px] -z-10 top-[600px] opacity-30" style={{ backgroundImage: `url(/hero-geo.svg)` }}>
+                    <div className="innger-bg-geo "></div>
+                </div>
+                <section className="flex justify-center items-center mb-20">
                     <div className="flex justify-center items-center">
-                        <Image alt="profile-img" src="/hero-img.png" width={1300} height={980} />
+                        <Image alt="profile-img" src="/bongo-cat.png" width={1300} height={980} />
                     </div>
                     <div>
                         <p className="text-lg text-muted-foreground font-medium">Hi! I'm</p>
@@ -32,8 +35,8 @@ export default function CvPage() {
                             </div>
                         </div>
                     </div>
-                </div>
-                <div className="grid grid-cols-2 gap-24">
+                </section>
+                <section className="grid grid-cols-2 gap-24">
                     <div className="text-slate-50">
                         <p className="text-amber-500 mb-6 text-xs text-center font-bold">education</p>
                         <div className="border border-slate-900 rounded-lg p-4 flex flex-col gap-10">
@@ -84,7 +87,7 @@ export default function CvPage() {
                             </Button>
                         </div>
                     </div>
-                </div>
+                </section>
                 <section className="text-slate-100 mt-24">
                     <h3 className="text-center font-medium text-muted-foreground">My skills</h3>
                     <div className="flex gap-20 px-20 py-10 flex-wrap justify-center items-center">
@@ -97,7 +100,7 @@ export default function CvPage() {
                                 <p className="font-medium text-muted-foreground py-2 shadow-inner">Python</p>
                             </div>
                         </div> */}
-                        <div className="bg-gradient-to-tr from-slate-900 to-slate-900/10 rounded-full w-32 aspect-square flex justify-center flex-col items-center gap-2 shadow-md">
+                        {/* <div className="bg-gradient-to-tr from-slate-900 to-slate-900/10 rounded-full w-32 aspect-square flex justify-center flex-col items-center gap-2 shadow-md">
                             <p className="font-semibold text-muted-foreground text-sm">React</p>
                             <FaReact className="text-6xl text-muted-foreground text-sky-500" />
                         </div>
@@ -108,22 +111,50 @@ export default function CvPage() {
                         <div className="bg-slate-900/50 rounded-full w-32 aspect-square flex justify-center flex-col items-center gap-2 shadow-md">
                             <p className="font-semibold text-muted-foreground text-sm">Next.js</p>
                             <Image src={'/nextjs.svg'} alt="skill image" width={50} height={50} />
+                        </div> */}
+                        <div className="bg-[#090F20] rounded-full w-32 aspect-square flex justify-center flex-col items-center gap-2 shadow-md">
+                            <p className="font-semibold text-muted-foreground text-sm">React</p>
+                            <Image src={'/react.svg'} alt="skill image" width={50} height={50} />
                         </div>
-                        <div className="bg-slate-900/50 rounded-full w-32 aspect-square flex justify-center flex-col items-center gap-2 shadow-md">
+                        <div className="bg-[#090F20] rounded-full w-32 aspect-square flex justify-center flex-col items-center gap-2 shadow-md">
+                            <p className="font-semibold text-muted-foreground text-sm">TypeScript</p>
+                            <Image src={'/typescript.svg'} alt="skill image" width={50} height={50} />
+                        </div>
+                        <div className="bg-[#090F20] rounded-full w-32 aspect-square flex justify-center flex-col items-center gap-2 shadow-md">
                             <p className="font-semibold text-muted-foreground text-sm">NodeJS</p>
                             <Image src={'/node.svg'} alt="skill image" width={50} height={50} />
                         </div>
-                        <div className="bg-slate-900/50 rounded-full w-32 aspect-square flex justify-center flex-col items-center gap-2 shadow-md">
+                        <div className="bg-[#090F20] rounded-full w-32 aspect-square flex justify-center flex-col items-center gap-2 shadow-md">
+                            <p className="font-semibold text-muted-foreground text-sm">Express</p>
+                            <Image src={'/expressjs.svg'} alt="skill image" width={50} height={50} />
+                        </div>
+                        <div className="bg-[#090F20] rounded-full w-32 aspect-square flex justify-center flex-col items-center gap-2 shadow-md">
                             <p className="font-semibold text-muted-foreground text-sm">Sequelize</p>
                             <Image src={'/sequelize.svg'} alt="skill image" width={50} height={50} />
                         </div>
-                        <div className="bg-slate-900/50 rounded-full w-32 aspect-square flex justify-center flex-col items-center gap-2 shadow-md">
+                        <div className="bg-[#090F20] rounded-full w-32 aspect-square flex justify-center flex-col items-center gap-2 shadow-md">
+                            <p className="font-semibold text-muted-foreground text-sm">Next.js</p>
+                            <Image src={'/nextjs.svg'} alt="skill image" width={50} height={50} />
+                        </div>
+                        <div className="bg-[#090F20] rounded-full w-32 aspect-square flex justify-center flex-col items-center gap-2 shadow-md">
+                            <p className="font-semibold text-muted-foreground text-sm">SQL</p>
+                            <Image src={'/sql.svg'} alt="skill image" width={50} height={50} />
+                        </div>
+                        <div className="bg-[#090F20] rounded-full w-32 aspect-square flex justify-center flex-col items-center gap-2 shadow-md">
+                            <p className="font-semibold text-muted-foreground text-sm">Tailwind</p>
+                            <Image src={'/tailwind.svg'} alt="skill image" width={50} height={50} />
+                        </div>
+                        {/* <div className=" bg-gradient-to-tr from-[#090F20] to-slate-950 rounded-full w-32 aspect-square flex justify-center flex-col items-center gap-2 shadow-md">
+                            <p className="font-semibold text-muted-foreground text-sm">Sequelize</p>
+                            <Image src={'/sequelize.svg'} alt="skill image" width={50} height={50} />
+                        </div> */}
+                        <div className="bg-[#090F20] rounded-full w-32 aspect-square flex justify-center flex-col items-center gap-2 shadow-md">
                             <p className="font-semibold text-muted-foreground text-sm">Python</p>
                             <Image src={'/python.svg'} alt="skill image" width={50} height={50} />
                         </div>
-                        <div className="bg-slate-900/50 rounded-full w-32 aspect-square flex justify-center flex-col items-center gap-2 shadow-md">
+                        <div className="bg-[#090F20] rounded-full w-32 aspect-square flex justify-center flex-col items-center gap-2 shadow-md">
                             <p className="font-semibold text-muted-foreground text-sm">C++</p>
-                            <Image src={'/cpp.svg'} alt="skill image" width={50} height={50} />
+                            <Image src={'/c++.svg'} alt="skill image" width={50} height={50} />
                         </div>
                         {/* </div> */}
                         {/* <div className="bg-gradient-to-br from-sky-400/30 to-sky-900/30 p-[1px] rounded-md">

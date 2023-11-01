@@ -79,3 +79,16 @@
   width: 0.0rem;
   height: 0.0rem;
 }
+
+.innger-bg-geo {
+  background: rgb(255, 255, 255);
+  /* background: radial-gradient(circle, rgba(255, 255, 255, 0) 0%, #020617 100%), linear-gradient(180deg, #020617 0%, rgba(0, 212, 255, 0) 100%); */
+  background: radial-gradient(circle, rgba(255, 255, 255, 0) 0%, #020617 100%), linear-gradient(180deg, rgba(2,6,23,1) 0%, rgba(0,212,255,0) 50%, rgba(2,6,23,1) 100%);
+  object-fit: scale-down;
+  /* width: 1920px; */
+  /* height: 1080px; */
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: 20;
+}
