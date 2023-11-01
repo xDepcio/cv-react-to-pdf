@@ -14,7 +14,8 @@ fetch('https://api.pdfshift.io/v3/convert/pdf', {
         landscape: false,
         use_print: false,
         sandbox: true,
-        format: `{1280}x{2160}`
+        format: `350mmx600mm`,
+        delay: 10000
     })
 }).then(response => {
     response.body.pipe(fs.createWriteStream('cv.pdf'))
