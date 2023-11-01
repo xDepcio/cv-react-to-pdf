@@ -89,7 +89,15 @@ export default function CvPage() {
                     <h3 className="text-center font-medium text-muted-foreground">My skills</h3>
                     <div className="flex gap-20 px-20 py-10 flex-wrap justify-center items-center">
                         {/* <div className="rounded-full bg-slate-700"> */}
-                        <div className="bg-slate-900/50 rounded-full w-32 aspect-square flex justify-center flex-col items-center gap-2 shadow-md">
+                        {/* <div className="bg-gradient-to-br from-sky-400/30 to-sky-900/30 p-[1px] rounded-md">
+                            <div className="bg-slate-950 rounded-md w-32 aspect-square flex justify-center flex-col items-center">
+                                <div className="bg-slate-900 w-full flex-1 flex items-center justify-center rounded-t-md">
+                                    <Image src={'/python.svg'} alt="skill image" width={50} height={50} />
+                                </div>
+                                <p className="font-medium text-muted-foreground py-2 shadow-inner">Python</p>
+                            </div>
+                        </div> */}
+                        <div className="bg-gradient-to-tr from-slate-900 to-slate-900/10 rounded-full w-32 aspect-square flex justify-center flex-col items-center gap-2 shadow-md">
                             <p className="font-semibold text-muted-foreground text-sm">React</p>
                             <FaReact className="text-6xl text-muted-foreground text-sky-500" />
                         </div>
@@ -118,7 +126,7 @@ export default function CvPage() {
                             <Image src={'/cpp.svg'} alt="skill image" width={50} height={50} />
                         </div>
                         {/* </div> */}
-                        <div className="bg-gradient-to-br from-sky-400/30 to-sky-900/30 p-[1px] rounded-md">
+                        {/* <div className="bg-gradient-to-br from-sky-400/30 to-sky-900/30 p-[1px] rounded-md">
                             <div className="bg-slate-950 rounded-md w-32 aspect-square flex justify-center flex-col items-center gap-4">
                                 <p className="font-medium text-muted-foreground">Python</p>
                                 <Image src={'/python.svg'} alt="skill image" width={50} height={50} />
@@ -153,7 +161,7 @@ export default function CvPage() {
                                 <p className="font-medium text-muted-foreground">C++</p>
                                 <FaReact className="text-6xl text-muted-foreground" />
                             </div>
-                        </div>
+                        </div> */}
                     </div>
                 </section>
                 <section className="text-slate-100 mt-24">
