@@ -12,7 +12,7 @@ import Link from "next/link";
 export default function CvPage() {
     return (
         <div className="bg-slate-950 h-screen w-screen overflow-x-hidden">
-            <div className="w-[60%] w-[1152px] m-auto">
+            <div className="w-[1152px] m-auto">
                 <div className="flex justify-center items-center">
                     <div className="flex justify-center items-center">
                         <Image alt="profile-img" src="/hero-img.png" width={1300} height={980} />

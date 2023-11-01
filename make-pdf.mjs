@@ -13,7 +13,8 @@ fetch('https://api.pdfshift.io/v3/convert/pdf', {
         source: 'https://cv-react-to-pdf.vercel.app/cv',
         landscape: false,
         use_print: false,
-        sandbox: true
+        sandbox: true,
+        format: `{1280}x{2160}`
     })
 }).then(response => {
     response.body.pipe(fs.createWriteStream('cv.pdf'))
