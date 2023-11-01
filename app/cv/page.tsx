@@ -13,12 +13,13 @@ export default function CvPage() {
     return (
         <div className="h-screen w-screen overflow-x-hidden">
             <div className="w-[1152px] m-auto relative">
-                <div className="absolute w-full h-[700px] -z-10 top-[600px] opacity-30" style={{ backgroundImage: `url(/hero-geo.svg)` }}>
+                <div className="absolute w-full h-[700px] -z-10 top-[630px] opacity-30" style={{ backgroundImage: `url(/hero-geo.svg)` }}>
                     <div className="innger-bg-geo "></div>
                 </div>
-                <section className="flex justify-center items-center mb-20">
+                <section className="flex justify-center items-center mb-20 gap-8 mt-20">
                     <div className="flex justify-center items-center">
-                        <Image alt="profile-img" src="/bongo-cat.png" width={1300} height={980} />
+                        {/* <Image alt="profile-img" src="/bongo-cat.png" width={1300} height={980} /> */}
+                        <Image alt="profile-img" src="/test.svg" width={400} height={20000} />
                     </div>
                     <div>
                         <p className="text-lg text-muted-foreground font-medium">Hi! I'm</p>
