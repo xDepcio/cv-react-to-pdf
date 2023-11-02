@@ -89,7 +89,7 @@ export default function CvPage() {
                         </div>
                     </div>
                 </section>
-                {/* <section className="text-slate-100 mt-24">
+                <section className="text-slate-100 mt-24">
                     <h3 className="text-center font-medium text-muted-foreground">My skills</h3>
                     <div className="flex gap-20 px-20 py-10 flex-wrap justify-center items-center">
                         <div className="bg-[#090F20] rounded-full w-32 aspect-square flex justify-center flex-col items-center gap-2 shadow-md">
@@ -133,7 +133,7 @@ export default function CvPage() {
                             <Image src={'/c++.svg'} alt="skill image" width={50} height={50} />
                         </div>
                     </div>
-                </section> */}
+                </section>
                 <section className="text-slate-100 mt-24">
                     <div className="flex items-center justify-start gap-2 text-muted-foreground font-medium">
                         <h3 className="">Recent projects</h3>
