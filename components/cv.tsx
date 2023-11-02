@@ -9,9 +9,9 @@ import { HiChevronDown } from "react-icons/hi";
 import { FiMail } from "react-icons/fi";
 import Link from "next/link";
 
-export default function CvPage() {
+export default function Cv() {
     return (
-        <div className="h-screen w-screen overflow-x-hidden">
+        <main>
             <div className="w-[1152px] m-auto relative">
                 <div className="absolute w-full h-[700px] -z-10 top-[630px] opacity-30" style={{ backgroundImage: `url(/hero-geo.svg)` }}>
                     <div className="innger-bg-geo "></div>
@@ -59,9 +59,9 @@ export default function CvPage() {
                                     <div className="absolute w-1 h-20 rounded-full bg-slate-300 left-1/2 bottom-full -translate-x-1/2 translate-y-1/2"></div>
                                 </div>
                                 <div>
-                                    <p className="mb-2">Math/Physics</p>
-                                    <p className="text-sm font-medium text-muted-foreground">High School. I LO. w Giżycku</p>
-                                    <p className="text-xs text-muted-foreground font-medium">2019 - 2022</p>
+                                    <p className="mb-2">Computer sciencie</p>
+                                    <p className="text-sm font-medium text-muted-foreground">Warsaw Univeristy of Technology</p>
+                                    <p className="text-xs text-muted-foreground font-medium">2022 - now</p>
                                 </div>
                             </div>
                         </div>
@@ -72,9 +72,8 @@ export default function CvPage() {
                                 <p className="text-xs">About me</p>
                                 <HiChevronDown />
                             </div>
-                            <h2 className="mt-4 text-3xl font-medium mb-4">Short bio about me</h2>
-                            {/* <p className="">Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem laborum cum consectetur, officia commodi architecto ullam id explicabo tempore voluptatibus corrupti fuga nulla debitis, nesciunt, culpa doloribus nemo praesentium corporis.</p> */}
-                            <p className="">I study 2nd year of computer science. In my free time and in between exams I code for fun, mostly in TypeScript. I like working in new projects with technologies I never used before and am always keen to learn new language/framework.</p>
+                            <h2 className="mt-4 text-3xl font-medium mb-4">Short bio of mine</h2>
+                            <p className="">Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem laborum cum consectetur, officia commodi architecto ullam id explicabo tempore voluptatibus corrupti fuga nulla debitis, nesciunt, culpa doloribus nemo praesentium corporis.</p>
                         </div>
                         <div className="flex items-center justify-start gap-4">
                             <Button className="flex items-center justify-center gap-2">
@@ -149,8 +148,7 @@ export default function CvPage() {
                                 <div>
                                     <h4 className="text-xl font-medium mt-4">Strapup - a template CLI</h4>
                                     <p className="text-sm text-muted-foreground">React, TypeScript, Next.js, NodeJS, TailwindCSS, CLI</p>
-                                    {/* <p className="mt-6">Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit accusamus laborum minus sint id alias ipsam officia corporis. Ipsum exercitationem voluptatum inventore repellat vitae! Totam optio nostrum temporibus officia nisi?</p> */}
-                                    <p className="mt-6">A project consisting of Strapup npm package - a CLI tool and a website for its doucmentation. It allows to quickly bootstrap any project by running custom scripts and pasting custom templates all from within interactive CLI.</p>
+                                    <p className="mt-6">Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit accusamus laborum minus sint id alias ipsam officia corporis. Ipsum exercitationem voluptatum inventore repellat vitae! Totam optio nostrum temporibus officia nisi?</p>
                                 </div>
                                 <div className="flex gap-4 items-center justify-start mt-10">
                                     <Button >
@@ -206,6 +204,6 @@ export default function CvPage() {
                     <p className="text-muted-foreground text-sm text-center">CV designed and created in React by me :). View code <Link href={'/'} className="underline inline">here</Link>.</p>
                 </section>
             </div>
-        </div>
+        </main>
     )
 }

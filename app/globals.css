@@ -70,6 +70,7 @@
   * {
     @apply border-border;
   }
+
   body {
     @apply bg-background text-foreground;
   }
@@ -83,7 +84,7 @@
 .innger-bg-geo {
   background: rgb(255, 255, 255);
   /* background: radial-gradient(circle, rgba(255, 255, 255, 0) 0%, #020617 100%), linear-gradient(180deg, #020617 0%, rgba(0, 212, 255, 0) 100%); */
-  background: radial-gradient(circle, rgba(255, 255, 255, 0) 0%, #020617 100%), linear-gradient(180deg, rgba(2,6,23,1) 0%, rgba(0,212,255,0) 50%, rgba(2,6,23,1) 100%);
+  background: radial-gradient(circle, rgba(2, 6, 23, 0) 0%, #020617 100%), linear-gradient(180deg, rgba(2, 6, 23, 1) 0%, rgba(2, 6, 23, 0) 50%, rgba(2, 6, 23, 1) 100%);
   object-fit: scale-down;
   /* width: 1920px; */
   /* height: 1080px; */
@@ -123,35 +124,44 @@
   /* stroke-linejoin: round; */
   /* stroke-width: 4; */
 }
+
 #bongo-cat .laptop-cover,
 #bongo-cat .headphone .band {
   /* fill: none; */
 }
-#bongo-cat .paw, #bongo-cat .head {
+
+#bongo-cat .paw,
+#bongo-cat .head {
   /* stroke: var(#ffcc81); */
 }
+
 #bongo-cat .laptop-keyboard {
   /* stroke-width: 2; */
 }
+
 #bongo-cat .terminal-code {
   /* stroke-width: 5; */
 }
+
 #bongo-cat .music .note,
 #bongo-cat .laptop-base,
 #bongo-cat .laptop-cover,
 #bongo-cat .paw .pads {
   /* stroke: var(#ff61d8); */
 }
+
 #bongo-cat .table line,
 #bongo-cat .headphone .band,
 #bongo-cat .headphone .speaker path:nth-child(3) {
   /* stroke: var(#a5ea9b); */
 }
+
 #bongo-cat .terminal-frame,
 #bongo-cat .laptop-keyboard,
 #bongo-cat .headphone .speaker path:nth-child(2) {
   /* stroke: var(#569cfa); */
 }
+
 #bongo-cat .terminal-code,
 #bongo-cat .headphone .speaker path:first-child {
   /* stroke: var(#7ed1e2); */
