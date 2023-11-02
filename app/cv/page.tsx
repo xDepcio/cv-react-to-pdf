@@ -11,7 +11,7 @@ import Link from "next/link";
 
 export default function CvPage() {
     return (
-        <div className="h-screen w-screen overflow-x-hidden">
+        <div className="">
             <div className="w-[1152px] m-auto relative">
                 <div className="absolute w-full h-[700px] -z-10 top-[630px] opacity-30" style={{ backgroundImage: `url(/hero-geo.svg)` }}>
                     <div className="innger-bg-geo "></div>
