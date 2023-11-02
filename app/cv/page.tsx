@@ -77,15 +77,17 @@ export default function CvPage() {
                             <p className="">I study 2nd year of computer science. In my free time and in between exams I code for fun, mostly in TypeScript. I like working in new projects with technologies I never used before and am always keen to learn new language/framework.</p>
                         </div>
                         <div className="flex items-center justify-start gap-4">
-                            <Button className="flex items-center justify-center gap-2">
-                                <p>View Github</p>
-                                <Github />
+                            <Button>
+                                <Link className="flex items-center justify-center gap-2" href={'https://github.com/xDepcio'}>
+                                    <p>View Github</p>
+                                    <Github />
+                                </Link>
                             </Button>
                             <Button>
-                                <Link href={"mailto:olek.drwal@gmail.com"} className="flex items-center justify-center gap-2">
+                                <a href="mailto:olek.drwal@gmail.com" className="flex items-center justify-center gap-2">
                                     <p>Contact me</p>
                                     <FiMail className='text-2xl' />
-                                </Link>
+                                </a>
                             </Button>
                         </div>
                     </div>
@@ -154,13 +156,13 @@ export default function CvPage() {
                                 </div>
                                 <div className="flex gap-4 items-center justify-start mt-10">
                                     <Button >
-                                        <Link href={'strapup.vercel.app'} className="flex items-center justify-center gap-2">
+                                        <Link href={'https://github.com/xDepcio/strapup'} className="flex items-center justify-center gap-2">
                                             <p>See code</p>
                                             <Code2 />
                                         </Link>
                                     </Button>
                                     <Button >
-                                        <Link href={'strapup.vercel.app'} className="flex items-center justify-center gap-2">
+                                        <Link href={'https://strapup.vercel.app/'} className="flex items-center justify-center gap-2">
                                             <p>View deployment</p>
                                             <EyeIcon />
                                         </Link>
@@ -185,7 +187,7 @@ export default function CvPage() {
                                 </div>
                                 <div className="flex gap-4 items-center justify-start mt-10">
                                     <Button >
-                                        <Link href={'strapup.vercel.app'} className="flex items-center justify-center gap-2">
+                                        <Link href={'https://github.com/xDepcio/boss-monster-ts'} className="flex items-center justify-center gap-2">
                                             <p>See code</p>
                                             <Code2 />
                                         </Link>
@@ -199,11 +201,10 @@ export default function CvPage() {
                                 </div>
                             </div>
                         </div>
-
                     </div>
                 </section>
                 <section className="text-slate-100 mt-24 mb-64">
-                    <p className="text-muted-foreground text-sm text-center">CV designed and created in React by me :). View code <Link href={'/'} className="underline inline">here</Link>.</p>
+                    <p className="text-muted-foreground text-sm text-center">CV designed and created in React by me :). View code <Link href={'https://github.com/xDepcio/cv-react-to-pdf'} className="underline inline">here</Link>.</p>
                 </section>
             </div>
         </div>
