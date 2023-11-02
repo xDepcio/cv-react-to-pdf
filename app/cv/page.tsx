@@ -13,10 +13,10 @@ export default function CvPage() {
     return (
         <div className="">
             <div className="w-[1152px] m-auto relative">
-                <div className="absolute w-full h-[700px] -z-10 top-[630px] opacity-30" style={{ backgroundImage: `url(/hero-geo.svg)` }}>
+                <div className="absolute w-full h-[700px] -z-10 top-[600px] opacity-30" style={{ backgroundImage: `url(/hero-geo.svg)` }}>
                     <div className="innger-bg-geo "></div>
                 </div>
-                <section className="flex justify-center items-center mb-12 gap-8 mt-20">
+                <section className="flex justify-center items-center mb-12 gap-8 mt-12">
                     <div className="flex justify-center items-center relative">
                         <div className="w-[1200px] h-[600px] scale-[0.6] -left-[230px] -top-[60px] absolute" style={{ backgroundImage: `url(/test-2.svg)` }}>
 
@@ -142,7 +142,7 @@ export default function CvPage() {
                     </div>
                     <div className="mt-8 flex flex-col gap-16">
                         <div className="flex gap-10">
-                            <Image unoptimized alt="project-1-image" src={"/strapup-main-page-cut.webp"} width={500} height={500}
+                            <Image alt="project-1-image" src={"/strapup-main-page-cut.webp"} width={500} height={500}
                                 className="shadow-md rounded-lg"
                             />
                             <div className="">
@@ -174,14 +174,14 @@ export default function CvPage() {
                             <div className="bg-slate-300 w-2 aspect-square rounded-full"></div>
                         </div>
                         <div className="flex gap-10 flex-row-reverse">
-                            <Image unoptimized alt="project-1-image" src={"/strapup-main-page-cut.webp"} width={500} height={500}
-                                className="shadow-md rounded-lg"
+                            <Image alt="project-1-image" src={"/boss-monster.webp"} width={500} height={500}
+                                className="shadow-md rounded-lg border-y-[20px] border-red-950/40"
                             />
                             <div className="">
                                 <div>
-                                    <h4 className="text-xl font-medium mt-4">Strapup - a template CLI</h4>
-                                    <p className="text-sm text-muted-foreground">React, TypeScript, Next.js, NodeJS, TailwindCSS, CLI</p>
-                                    <p className="mt-6">Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit accusamus laborum minus sint id alias ipsam officia corporis. Ipsum exercitationem voluptatum inventore repellat vitae! Totam optio nostrum temporibus officia nisi?</p>
+                                    <h4 className="text-xl font-medium mt-4">Boss Monsters Tabletop</h4>
+                                    <p className="text-sm text-muted-foreground">React, TypeScript, NodeJS, TailwindCSS, Socket.IO, Express</p>
+                                    <p className="mt-6">Recreation of Boss Monsters - a tabletop RPG, as a multiplayer game on the web. It's one of my older projects, which underwent few cycles of sudden gain and lost of interest in it. (thus TypeScript and Tailwind added half way through). I decided to include It here, as It shows my progress in terms of programming in general and the ability to use the knowledge acquired from other projects.</p>
                                 </div>
                                 <div className="flex gap-4 items-center justify-start mt-10">
                                     <Button >
@@ -190,12 +190,12 @@ export default function CvPage() {
                                             <Code2 />
                                         </Link>
                                     </Button>
-                                    <Button >
+                                    {/* <Button >
                                         <Link href={'strapup.vercel.app'} className="flex items-center justify-center gap-2">
                                             <p>View deployment</p>
                                             <EyeIcon />
                                         </Link>
-                                    </Button>
+                                    </Button> */}
                                 </div>
                             </div>
                         </div>
