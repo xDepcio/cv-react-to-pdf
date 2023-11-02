@@ -141,7 +141,7 @@ export default function CvPage() {
                     </div>
                     <div className="mt-8 flex flex-col gap-16">
                         <div className="flex gap-10">
-                            <Image alt="project-1-image" src={"/strapup-main-page-cut.webp"} width={500} height={500}
+                            <Image rel="preload" alt="project-1-image" src={"/strapup-main-page-cut.webp"} width={500} height={500}
                                 className="shadow-md rounded-lg"
                             />
                             <div className="">
@@ -172,7 +172,7 @@ export default function CvPage() {
                             <div className="bg-slate-300 w-2 aspect-square rounded-full"></div>
                         </div>
                         <div className="flex gap-10 flex-row-reverse">
-                            <Image alt="project-1-image" src={"/strapup-main-page-cut.webp"} width={500} height={500}
+                            <Image rel="preload" alt="project-1-image" src={"/strapup-main-page-cut.webp"} width={500} height={500}
                                 className="shadow-md rounded-lg"
                             />
                             <div className="">
