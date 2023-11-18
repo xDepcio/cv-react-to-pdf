@@ -43,5 +43,5 @@ fetch('https://api.pdfshift.io/v3/convert/pdf', {
         // javascript: `window.scroll(0, 1000)`
     })
 }).then(response => {
-    response.body.pipe(fs.createWriteStream('test.pdf'))
+    response.body.pipe(fs.createWriteStream('cv2.pdf'))
 })
