@@ -34,14 +34,14 @@ fetch('https://api.pdfshift.io/v3/convert/pdf', {
     },
     body: JSON.stringify({
         // source: 'https://en.wikipedia.org/wiki/PDF',
-        source: 'https://cv-react-to-pdf.vercel.app/cv',
+        source: 'https://cv-react-to-pdf.vercel.app/',
         landscape: false,
         use_print: false,
-        sandbox: true,
+        sandbox: false,
         format: `350mmx600mm`,
         // delay: 2000,
         // javascript: `window.scroll(0, 1000)`
     })
 }).then(response => {
-    response.body.pipe(fs.createWriteStream('cv2.pdf'))
+    response.body.pipe(fs.createWriteStream('cv-no-watermark.pdf'))
 })
